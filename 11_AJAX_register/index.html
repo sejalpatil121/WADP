@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css">  <!-- Link to your CSS file -->
+</head>
+<body>
+ <div class="registration-container">
+  <h2>Registration Form</h2>
+  <form id="register-form">
+    <input type="text" id="name" placeholder="Full Name" required><br>
+    <input type="email" id="email" placeholder="Email" required><br>
+    <input type="tel" id="mobile" placeholder="Mobile Number" pattern="[0-9]{10}" required><br>
+    <input type="date" id="dob" required><br>
+    <input type="text" id="city" placeholder="City" required><br>
+    <input type="text" id="address" placeholder="Address" required><br>
+    <input type="text" id="username" placeholder="Username" required><br>
+    <input type="password" id="password" placeholder="Password" minlength="6" required><br>
+    <button type="submit">Register</button>
+  </form>
+  </div>
+  <br>
+  <a href="login.html">Already have an account? Login</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
