@@ -1,0 +1,23 @@
+{
+    "mumbai": {
+      "temperature": 32,
+      "humidity": 70,
+      "conditions": "Sunny"
+    },
+    "delhi": {
+      "temperature": 28,
+      "humidity": 60,
+      "conditions": "Cloudy"
+    },
+    "pune": {
+      "temperature": 26,
+      "humidity": 65,
+      "conditions": "Rainy"
+    },
+    "chennai": {
+      "temperature": 34,
+      "humidity": 80,
+      "conditions": "Humid"
+    }
+}
+  
