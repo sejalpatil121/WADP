@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - TasteBites</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f8f8f8;
+    }
+
+    header {
+      background-color: #e67e22;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .container {
+      padding: 40px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #e67e22;
+    }
+
+    .contact-details {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+
+    .detail {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      width: 200px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .detail:hover {
+      transform: translateY(-5px);
+    }
+
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto 40px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 12px 24px;
+      background-color: #e67e22;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #cf711f;
+    }
+
+    iframe {
+      width: 100%;
+      border: none;
+      height: 300px;
+      margin-top: 30px;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contact TasteBites</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>We’d love to hear from you!</h2>
+    <p>Reach out to us with questions, feedback, or reservations!</p>
+
+    <div class="contact-details">
+      <div class="detail">
+        📍 <strong>Location</strong><br>
+        MG Road, Pune, India
+      </div>
+      <div class="detail">
+        📞 <strong>Phone</strong><br>
+        +91 98765 43210
+      </div>
+      <div class="detail">
+        ✉️ <strong>Email</strong><br>
+        hello@tastebites.com
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message..." rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <h2>Find Us Here</h2>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.082293750157!2d73.87442497507332!3d18.526627382571158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c07be6cfb185%3A0x2cfac8fa054c4508!2sMG%20Road%2C%20Pune!5e0!3m2!1sen!2sin!4v1614686121790!5m2!1sen!2sin"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+  </div>
+</body>
+</html>
