@@ -2,21 +2,30 @@
 // npm install express mongoose ejs
 const express = require('express');
 const mongoose = require('mongoose');
-const Student = require('./models/Student');
 const app = express();
 
 app.set('view engine', 'ejs');
+app.use(express.urlencoded({ extended: true }));
 
-mongoose.connect('mongodb://127.0.0.1:27017/student', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-}).then(() => console.log("MongoDB connected"))
-  .catch(err => console.log(err));
+mongoose.connect('mongodb://127.0.0.1:27017/student', { useNewUrlParser: true, useUnifiedTopology: true});
+
+const studentSchema = new mongoose.Schema({
+  Name: String,
+  Roll_No: Number,
+  WAD_Marks: Number,
+  CC_Marks: Number,
+  DSBDA_Marks: Number,
+  CNS_Marks: Number,
+  AI_marks: Number
+});
+const Student = mongoose.model('Student', studentSchema);
 
 app.use(express.json());
 
+
 // Insert Array of Students
 app.get('/insert', async (req, res) => {
+  await Student.deleteMany({});
   const students = [
     { Name: "ABC", Roll_No: 111, WAD_Marks: 25, CC_Marks: 25, DSBDA_Marks: 25, CNS_Marks: 25, AI_marks: 25 },
     { Name: "XYZ", Roll_No: 112, WAD_Marks: 22, CC_Marks: 28, DSBDA_Marks: 30, CNS_Marks: 24, AI_marks: 29 },
@@ -30,7 +39,8 @@ app.get('/insert', async (req, res) => {
 app.get('/all', async (req, res) => {
   const count = await Student.countDocuments();
   const students = await Student.find();
-  res.send(`Total students: ${count}<br>${JSON.stringify(students, null, 2)}`);
+  //res.send(`Total students: ${count}<br>${JSON.stringify(students, null, 2)}`);
+  res.render('students', {count, students})
 });
 
 // Students with DSBDA > 20
