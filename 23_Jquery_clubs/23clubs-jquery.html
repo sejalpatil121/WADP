@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PICT Student Clubs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- jQuery Mobile -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    .club-img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      margin-top: 10px;
+      border-radius: 8px;
+    }
+    .club-box {
+      margin: 10px 0;
+      padding: 10px;
+      background: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #005ca9;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home">
+  <div data-role="header" data-theme="b">
+    <h1>PICT Clubs</h1>
+  </div>
+
+  <div role="main" class="ui-content">
+    <p>Welcome to Pune Institute of Computer Technology (PICT) Student Clubs Portal!</p>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#technical" data-transition="slide">Technical</a></li>
+        <li><a href="#cultural" data-transition="slide">Cultural</a></li>
+        <li><a href="#sports" data-transition="slide">Sports</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Technical Clubs -->
+<div data-role="page" id="technical">
+  <div data-role="header" data-theme="b">
+    <a href="#home" data-icon="home" data-transition="slide" data-direction="reverse">Home</a>
+    <h1>Technical Clubs</h1>
+  </div>
+
+  <div role="main" class="ui-content">
+    <div class="club-box">
+      <h2>Coding Club</h2>
+      <p><strong>Description:</strong> Focused on competitive programming, development, and AI projects.</p>
+      <p><strong>Achievements:</strong> CodeChef Rank 8 nationally, SIH winners 2023.</p>
+      <img class="club-img" src="https://via.placeholder.com/400x200?text=Coding+Club" />
+    </div>
+    <div class="club-box">
+      <h2>Robotics Club</h2>
+      <p><strong>Description:</strong> Builds autonomous and manual robots for competitions and research.</p>
+      <p><strong>Achievements:</strong> Winner of RoboRace, RoboCon qualifiers.</p>
+      <img class="club-img" src="https://via.placeholder.com/400x200?text=Robotics+Club" />
+    </div>
+  </div>
+</div>
+
+<!-- Cultural Clubs -->
+<div data-role="page" id="cultural">
+  <div data-role="header" data-theme="b">
+    <a href="#home" data-icon="home" data-transition="slide" data-direction="reverse">Home</a>
+    <h1>Cultural Clubs</h1>
+  </div>
+
+  <div role="main" class="ui-content">
+    <div class="club-box">
+      <h2>Dance Club</h2>
+      <p><strong>Description:</strong> Encourages students to perform classical and modern dance.</p>
+      <p><strong>Achievements:</strong> Winners at IntraVibe, Cultural Day Headliners.</p>
+      <img class="club-img" src="https://via.placeholder.com/400x200?text=Dance+Club" />
+    </div>
+    <div class="club-box">
+      <h2>Drama Club</h2>
+      <p><strong>Description:</strong> Brings stories to life through stage plays and street theatre.</p>
+      <p><strong>Achievements:</strong> Runners-up at Firodiya Karandak 2024.</p>
+      <img class="club-img" src="https://via.placeholder.com/400x200?text=Drama+Club" />
+    </div>
+  </div>
+</div>
+
+<!-- Sports Clubs -->
+<div data-role="page" id="sports">
+  <div data-role="header" data-theme="b">
+    <a href="#home" data-icon="home" data-transition="slide" data-direction="reverse">Home</a>
+    <h1>Sports Clubs</h1>
+  </div>
+
+  <div role="main" class="ui-content">
+    <div class="club-box">
+      <h2>Football Club</h2>
+      <p><strong>Description:</strong> Represents PICT in inter-college and state-level tournaments.</p>
+      <p><strong>Achievements:</strong> Winners of Pune University Zonal Tournament 2023.</p>
+      <img class="club-img" src="https://via.placeholder.com/400x200?text=Football+Club" />
+    </div>
+    <div class="club-box">
+      <h2>Table Tennis Club</h2>
+      <p><strong>Description:</strong> Dedicated to promoting table tennis skills and tournaments.</p>
+      <p><strong>Achievements:</strong> Semi-finalists at TechFest Sports League, Mumbai.</p>
+      <img class="club-img" src="https://via.placeholder.com/400x200?text=Table+Tennis+Club" />
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
