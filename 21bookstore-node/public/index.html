@@ -30,7 +30,9 @@
                         <input name="price" type="number" value="${book.price}" required>
                         <input name="genre" value="${book.genre}" required>
                         <button type="submit">Update</button>
-                        <a href="/delete/${book._id}">Delete</a>
+                    </form>
+                    <form action="/delete/${book._id}?_method=DELETE" method="POST" style="display:inline;">
+                        <button type="submit">Delete</button>
                     </form>
                     <hr>
                 `;
