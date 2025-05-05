@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "Smartphone",
+      "price": 499.99,
+      "image": "https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?cs=srgb&dl=pexels-fotios-photos-1092644.jpg&fm=jpg"
+    },
+    {
+      "id": 2,
+      "name": "Laptop",
+      "price": 899.99,
+      "image": "https://images.unsplash.com/photo-1511385348-a52b4a160dc2?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wJTIwY29tcHV0ZXJ8ZW58MHx8MHx8fDA%3D"
+    },
+    {
+      "id": 3,
+      "name": "Headphones",
+      "price": 59.99,
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGVhZHBob25lc3xlbnwwfHwwfHx8MA%3D%3D"
+    },
+    {
+        "id": 4,
+        "name": "Keyboard",
+        "price": 78.99,
+        "image": "https://rapoo.in/wp-content/uploads/2023/02/e-2_result-1.jpg"
+    }
+  ]
+  
