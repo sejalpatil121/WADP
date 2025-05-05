@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add New Song</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container mt-5">
+  <h2>Add a New Favorite Song</h2>
+  <form action="/add" method="POST">
+    <div class="mb-3">
+      <label>Song Name:</label>
+      <input name="songname" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label>Film:</label>
+      <input name="film" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label>Music Director:</label>
+      <input name="music_director" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label>Singer:</label>
+      <input name="singer" class="form-control" required>
+    </div>
+    <button class="btn btn-primary">Add Song</button>
+  </form>
+</body>
+</html>
