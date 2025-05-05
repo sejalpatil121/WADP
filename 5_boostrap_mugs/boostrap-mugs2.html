@@ -25,11 +25,11 @@
           Filter by Category
         </button>
         <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
-          <li><a class="dropdown-item category-filter" href="#" >All</a></li>
-          <li><a class="dropdown-item category-filter" href="#" >Electronics</a></li>
-          <li><a class="dropdown-item category-filter" href="#" >Clothing</a></li>
-          <li><a class="dropdown-item category-filter" href="#" >Books</a></li>
-          <li><a class="dropdown-item category-filter" href="#" >Home</a></li>
+          <li><a class="dropdown-item category-filter" href="#" data-category="all">All</a></li>
+          <li><a class="dropdown-item category-filter" href="#" data-category="electronics">Electronics</a></li>
+          <li><a class="dropdown-item category-filter" href="#" data-category="clothing">Clothing</a></li>
+          <li><a class="dropdown-item category-filter" href="#" data-category="book">Books</a></li>
+          <li><a class="dropdown-item category-filter" href="#" data-category="home">Home</a></li>
         </ul>
       </div>
     </div>
@@ -39,7 +39,7 @@
   <div class="container">
     <div class="row g-4" id="productGrid">
       <!-- Product Card: Electronics -->
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-card">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-card" data-category="electronics">
         <div class="card h-100">
           <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Headphones">
           <div class="card-body d-flex flex-column">
@@ -51,7 +51,7 @@
       </div>
   
       <!-- Product Card: Clothing -->
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-card" >
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-card" data-category="clothing">
         <div class="card h-100">
           <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="T-shirt">
           <div class="card-body d-flex flex-column">
@@ -63,7 +63,7 @@
       </div>
   
       <!-- Product Card: Books -->
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-card" >
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-card" data-category="book">
         <div class="card h-100">
           <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Book">
           <div class="card-body d-flex flex-column">
@@ -90,6 +90,22 @@
   
   <!-- Filter Script -->
   
+  <script>
+    document.querySelectorAll('.category-filter').forEach(button => {
+      button.addEventListener('click', function(e) {
+        e.preventDefault();
+        const category = this.getAttribute('data-category');
+        document.querySelectorAll('.product-card').forEach(card => {
+          const cardCategory = card.getAttribute('data-category');
+          if (category === 'all' || cardCategory === category) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
