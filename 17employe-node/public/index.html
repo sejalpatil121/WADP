@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Employee Directory</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Our Team</h1>
+  <div id="employee-container"></div>
+
+  <script>
+    fetch('/api/employees')
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById('employee-container');
+        data.forEach(emp => {
+          const div = document.createElement('div');
+          div.className = 'card';
+          div.innerHTML = `
+            <img src="${emp.image}" alt="${emp.name}" />
+            <h2>${emp.name}</h2>
+            <p><strong>${emp.designation}</strong></p>
+            <p>${emp.department}</p>
+            <p>Salary: ₹${emp.salary}</p>
+          `;
+          container.appendChild(div);
+        });
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "Alice Sharma",
+      "designation": "Software Engineer",
+      "department": "Development",
+      "salary": 80000,
+      "image": "images/chef1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Raj Mehta",
+      "designation": "HR Manager",
+      "department": "Human Resources",
+      "salary": 70000,
+      "image": "images/chef2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Sneha Kulkarni",
+      "designation": "Data Analyst",
+      "department": "Analytics",
+      "salary": 75000,
+      "image": "images/chef3.jpg"
+    }
+  ]
+  
