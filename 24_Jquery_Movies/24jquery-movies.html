@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PICT Movie Reviews</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- jQuery Mobile CDN -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    .movie-box {
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      background: #f4f4f4;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .movie-poster {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    h2 {
+      color: #0074d9;
+      margin-top: 0;
+    }
+
+    .movie-genre {
+      font-style: italic;
+      color: #888;
+    }
+  </style>
+</head>
+
+<body>
+
+<div data-role="page" id="home">
+  <div data-role="header" data-theme="b">
+    <h1>Movie Reviews</h1>
+  </div>
+
+  <div role="main" class="ui-content">
+
+    <div class="movie-box">
+      <h2>Inception</h2>
+      <p class="movie-genre">Genre: Sci-Fi, Thriller</p>
+      <img class="movie-poster" src="https://via.placeholder.com/400x200?text=Inception+Poster" alt="Inception">
+      <p><strong>Summary:</strong> A skilled thief is offered a chance to erase his criminal record by performing inception—planting an idea into a person's subconscious.</p>
+      <p><strong>Review:</strong> A visually stunning and intellectually challenging masterpiece by Christopher Nolan. A must-watch for sci-fi lovers.</p>
+    </div>
+
+    <div class="movie-box">
+      <h2>The Shawshank Redemption</h2>
+      <p class="movie-genre">Genre: Drama</p>
+      <img class="movie-poster" src="https://via.placeholder.com/400x200?text=Shawshank+Redemption" alt="Shawshank Redemption">
+      <p><strong>Summary:</strong> The story of a banker sentenced to life in prison for a crime he didn't commit, and his journey of hope and friendship.</p>
+      <p><strong>Review:</strong> A timeless classic with powerful performances and an unforgettable story about resilience and redemption.</p>
+    </div>
+
+    <div class="movie-box">
+      <h2>Interstellar</h2>
+      <p class="movie-genre">Genre: Sci-Fi, Adventure</p>
+      <img class="movie-poster" src="https://via.placeholder.com/400x200?text=Interstellar" alt="Interstellar">
+      <p><strong>Summary:</strong> A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.</p>
+      <p><strong>Review:</strong> An emotional and mind-bending journey through space, time, and love. A visual spectacle with deep themes.</p>
+    </div>
+
+    <div class="movie-box">
+      <h2>The Dark Knight</h2>
+      <p class="movie-genre">Genre: Action, Crime, Drama</p>
+      <img class="movie-poster" src="https://via.placeholder.com/400x200?text=The+Dark+Knight" alt="The Dark Knight">
+      <p><strong>Summary:</strong> Batman sets out to dismantle the remaining criminal organizations in Gotham, but faces chaos unleashed by the Joker.</p>
+      <p><strong>Review:</strong> An intense and gripping superhero movie with a legendary performance by Heath Ledger as the Joker.</p>
+    </div>
+
+    <div class="movie-box">
+      <h2>Parasite</h2>
+      <p class="movie-genre">Genre: Thriller, Drama</p>
+      <img class="movie-poster" src="https://via.placeholder.com/400x200?text=Parasite" alt="Parasite">
+      <p><strong>Summary:</strong> A poor family schemes to become employed by a wealthy household by infiltrating their lives one by one.</p>
+      <p><strong>Review:</strong> A sharp social commentary with brilliant storytelling. Parasite keeps you on edge till the very end.</p>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
